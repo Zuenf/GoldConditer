@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>TPL (PageTable)</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">
+			Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для удобного использования сайта.
+		</p>
+	<![endif]-->
+
+	<div class="page">
+		<div class="page__sidebar">
+			<div class="sidebar">
+				<div class="sidebar__logo"><i class="js-svg_logo"></i></div>
+				<nav class="sidebar__menu menu menu_primary">
+					<div class="menu__item active"><a href="#" class="menu__link">Классические торты</a></div>
+					<div class="menu__item"><a href="#" class="menu__link">Муссовые торты</a></div>
+					<div class="menu__item"><a href="#" class="menu__link">Капкейки</a></div>
+					<div class="menu__item"><a href="#" class="menu__link">Галлерея</a></div>
+					<div class="menu__item"><a href="#" class="menu__link">Отзывы</a></div>
+				</nav>
+				<div class="sidebar__footer">
+					<div class="sidebar__links">
+						<div class="sidebar__contacts">
+							<a href="#" class="sidebar__contact">+7 (987) 654-32-12</a>
+							<a href="#" class="sidebar__contact">ask@goldconditer.ru</a>
+						</div>
+						<div class="sidebar__soc">
+							<a href="#" class="sidebar__soc-btn btn btn_primary"><i class="js-svg_vk"></i></a>
+							<a href="#" class="sidebar__soc-btn btn btn_primary"><i class="js-svg_in"></i></a>
+						</div>
+					</div>
+					<div class="sidebar__copyright">&copy; GoldConditer.ru, 2017</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__main">
+			<div class="page__main-inner">
+				<!--<h1 class="page__title"><span class="page__title-inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ullam.</span></h1>-->
+				<div class="page__content page__content_sheet">
+					<div class="product product_single">
+						<div class="slider slider_type_one">
+							<div class="slider__slide"><img src="https://unsplash.it/400/400?image=556" alt=""></div>
+							<div class="slider__slide"><img src="https://unsplash.it/400/400?image=554" alt=""></div>
+							<div class="slider__slide"><img src="https://unsplash.it/400/400?image=552" alt=""></div>
+							<div class="slider__slide"><img src="https://unsplash.it/400/400?image=550" alt=""></div>
+							<div class="slider__slide"><img src="https://unsplash.it/400/400?image=548" alt=""></div>
+							<div class="slider__slide"><img src="https://unsplash.it/400/400?image=546" alt=""></div>
+						</div>
+						<form class="product__form">
+							<div class="list list_numbers">
+								<div class="list__item">
+									<div class="list__item-title">Выберите бисквит для торта</div>
+									<div class="list__item-content">
+										<div class="inline-group">
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="radio" name="biscuit" value="1">
+												<span class="custom-input__view">Ванильный</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="radio" name="biscuit" value="2">
+												<span class="custom-input__view">Шоколадный</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="radio" name="biscuit" value="3">
+												<span class="custom-input__view">Красный бархат</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="radio" name="biscuit" value="4">
+												<span class="custom-input__view">Бисквит королевы Виктории</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="radio" name="biscuit" value="5">
+												<span class="custom-input__view">Пряный банановый</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="radio" name="biscuit" value="6">
+												<span class="custom-input__view">Кокосовый</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="radio" name="biscuit" value="7">
+												<span class="custom-input__view">Морковный с орехами</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="list__item">
+									<div class="list__item-title">Выберите крем для торта</div>
+									<div class="list__item-content">
+										<div class="inline-group">
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="radio" name="cream" value="1">
+												<span class="custom-input__view">Ванильный</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="radio" name="cream" value="2">
+												<span class="custom-input__view">Шоколадный</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="list__item">
+									<div class="list__item-title">Выберите начинки для торта <div class="list__item-title-small">не более пяти</div></div>
+									<div class="list__item-content" data-max-checked="5">
+										<div class="list__item-subtitle">Фрукты</div>
+
+										<div class="inline-group">
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="1">
+												<span class="custom-input__view">Киви</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Банан</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Ананас</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Груша</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Апельсин</span>
+											</label>
+										</div>
+										<div class="list__item-subtitle">Орехи</div>
+										<div class="inline-group">
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="1">
+												<span class="custom-input__view">Грецкий</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Кешью</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Фундук</span>
+											</label>
+										</div>
+										<div class="list__item-subtitle">Конфитюр</div>
+										<div class="inline-group">
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="1">
+												<span class="custom-input__view">Клубничный</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Смородиновый</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Вишневый</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Черничный</span>
+											</label>
+										</div>
+										<div class="list__item-subtitle">Ганаш</div>
+										<div class="inline-group">
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="1">
+												<span class="custom-input__view">Темный</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Молочный</span>
+											</label>
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="2">
+												<span class="custom-input__view">Белый</span>
+											</label>
+										</div>
+										<div class="list__item-subtitle">Другое</div>
+										<div class="inline-group">
+											<label class="custom-input custom-input_radio custom-input_radio_type-one">
+												<input class="custom-input__orig" type="checkbox" name="filling" value="1">
+												<span class="custom-input__view">Карамель</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="list__item">
+									<div class="list__item-title">Расскажите каким вы видите торт</div>
+									<div class="list__item-content">
+										<textarea class="text-field text-filed_textarea" name="comment" placeholder="Как оформить торт?"></textarea>
+										<div class="inline-group">
+											<label class="custom-input custom-input_file custom-input_file_type-one">
+												<input type="file" class="custom-input__orig" name="images" multiple accept="image/*,image/jpeg,image/png">
+												<span class="custom-input__view">
+													<span class="custom-input__icon"><i class="js-svg_img"></i></span>
+													<span class="custom-input__text">Прикрепить изображения</span>
+												</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="list__item">
+									<div class="list__item-title">Укажите вес торта</div>
+									<div class="list__item-content">
+										<label class="custom-input custom-input_number custom-input_number_type-one" data-step="500" data-max="7000" data-min="1500">
+											<input type="hidden" class="custom-input__orig" name="weight" value="1500">
+											<span class="custom-input__view">
+												<span class="custom-input__text">
+													<span class="custom-input__value">1500</span>
+													<span class="custom-input__value-of">г</span>
+												</span>
+												<span class="custom-input__arrows">
+													<span class="custom-input__arrow custom-input__arrow_up"></span>
+													<span class="custom-input__arrow custom-input__arrow_down"></span>
+												</span>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="product__footer">
+								<div class="product__price">8000 р.</div>
+								<button class="product__footer-btn btn btn_simple">Добавить в корзину</button>
+								<button class="product__footer-btn btn btn_simple">Заказать сейчас</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a href="#" class="mini-cart">
+		<div class="mini-cart__icon"><i class="js-svg_cart"></i></div>
+		<div class="mini-cart__text">В корзине <span class="mini-cart__count">10</span> <span class="mini-cart__units" data-units="товар,товара,товаров">товар</span></div>
+	</a>
+
+
+	<!--<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>-->
+	<link rel="stylesheet" href="js/slick/slick.css">
+	<script>window.jQuery || document.write('<script src="js/jquery-2.2.2.min.js"><\/script>')</script>
+	<script src="js/svg-images.js"></script>
+	<script src="js/slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

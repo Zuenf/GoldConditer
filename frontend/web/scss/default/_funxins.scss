@@ -1,0 +1,60 @@
+/*-----------------------------------------------------------
+	Sizes Control
+-----------------------------------------------------------*/
+@function setSizeByPageWidth($size, $page-width) {
+	@return 1vw * ($size/($page-width/100));
+}
+
+@mixin setSizeByPageWidth($option, $size, $page-width, $min-size){
+	#{$option}: setSizeByPageWidth($size, $page-width);
+	
+	@media screen and (max-width: $min-size*($page-width/$size)) {
+		#{$option}: $min-size;
+	}
+}
+
+@function setSizeByPageHeight($size, $page-height) {
+	@return 1vh * ($size/($page-height/100));
+}
+
+@mixin setSizeByPageHeight($option, $size, $page-height, $min-size){
+	#{$option}: setSizeByPageHeight($size, $page-height);
+	
+	@media screen and (max-height: $min-size*($page-height/$size)) {
+		#{$option}: $min-size;
+	}
+}
+
+
+/*-----------------------------------------------------------
+	Other
+-----------------------------------------------------------*/
+@mixin isOverlay() {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@mixin fixNumberOfLines($line-height, $lines: 1) {
+	line-height: $line-height;
+	height: $line-height * $lines;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	@if $lines == 1{
+		white-space: nowrap;
+	}
+}
+
+@mixin setInlineBackground($font-size, $padding, $background-color) {
+	font-size: $font-size;
+	line-height: $font-size + $padding;
+	padding: $padding 0;
+	box-shadow: $padding 0 0 $background-color, -$padding 0 0 $background-color;
+	background-color: $background-color;
+	box-decoration-break: clone;
+}

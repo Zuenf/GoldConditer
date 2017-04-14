@@ -1,0 +1,20 @@
+$base: (
+	//Sizes
+	site-width: 900px,
+	font-size: 16px,
+
+	//Fonts
+	font-one: (Roboto, sans-serif),
+
+	//Colors
+	color-one: #f55,
+	color-two: #f6f6f6,
+	color-three: #222,
+
+	//Custom Vars
+	input-height: 32px,
+);
+
+@function getBase($key) {
+	@return map-get($base, $key);
+}

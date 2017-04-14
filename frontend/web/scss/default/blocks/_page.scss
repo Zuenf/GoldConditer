@@ -1,0 +1,92 @@
+//Добавить поддержку flex
+
+/*.page{
+	overflow: hidden;
+	
+	&__table{
+		display: table;
+		table-layout: fixed;
+		min-height: 100%;
+		width: 100%;
+	}
+	&__row{
+		display: table-row;
+		height: 0;
+	}
+	&__row_content{
+		height: 100%;
+	}
+	&__cell{
+		display: table-cell;
+		position: relative;
+	}
+
+	&__inner{
+		max-width: getBase('site-width');
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}*/
+
+
+
+/*-----------------------------------------------------------
+	Devlop
+-----------------------------------------------------------*/
+/*
+.page{
+	&__bg{
+		@include isOverlay();
+		z-index: -1;
+		
+		background: rgba(0,0,0,0.4);
+	}
+}
+
+
+.page__row_header{
+	height: 500px;
+}
+
+.section{
+	position: relative;
+
+	&__bg{
+		@include isOverlay();
+		z-index: -1;
+	}
+
+	&__inner{
+		width: getBase('site-width');
+		margin: 0 auto;
+	}
+
+	&__content_centered{
+		width: getBase('site-width');
+		margin: 0 auto;
+	}
+
+	.section__title{
+		font-size: 24px;
+	}
+}
+
+.section_header{
+	background: #d44;
+	color: #fff;
+}
+
+.section_one{
+	background: #6af;
+	color: #fff;
+
+	.section__content{
+		padding: 10px 10px;
+	}
+}
+
+.section_two{
+	background: #e0f0ff;
+	color: #4b4b4b;
+}*/
