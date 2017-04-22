@@ -80,6 +80,29 @@ class SiteController extends Controller {
         return $this->render('product');
     }
 
+
+    /**
+     * Displays grid of products
+     *
+     * @return mixed
+     */
+    public function actionProducts() {
+        return $this->render('products');
+    }
+
+
+    /**
+     * Displays cart page
+     *
+     * @return mixed
+     */
+    public function actionCart() {
+        $order = new \frontend\models\db\Order;
+        $order->load(\Yii::$app->request->post());
+        $order->validate();
+        return $this->render('cart', compact('order'));
+    }
+
     /**
      * Logs in a user.
      *

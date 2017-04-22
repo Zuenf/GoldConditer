@@ -1,5 +1,7 @@
 <?php
 return [
+    'sourceLanguage' => 'en',
+    'language' => 'ru',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
         'request' => [

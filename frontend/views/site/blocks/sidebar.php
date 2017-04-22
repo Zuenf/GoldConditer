@@ -18,6 +18,6 @@
                 <a href="#" class="sidebar__soc-btn btn btn_primary"><i class="js-svg_in"></i></a>
             </div>
         </div>
-        <div class="sidebar__copyright">&copy; jdoit.ru, 2017</div>
+        <div class="sidebar__copyright">&copy; goldconditer.ru, 2017</div>
     </div>
 </div>

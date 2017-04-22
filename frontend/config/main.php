@@ -46,6 +46,17 @@ return [
             ],
         ],
         'front' => 'app\other\FrontHelper',
+        'i18n' => [
+            'translations' => [
+                'app' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@frontend/other/messages',
+                    'fileMap' => [
+                        'app' => 'app.php'
+                    ],
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];
