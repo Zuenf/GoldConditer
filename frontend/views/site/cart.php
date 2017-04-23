@@ -163,43 +163,43 @@ $this->title = 'GoldConditer - авторские торты на заказ';
         </ul>
     </div>
     <?= Html::beginForm(['cart'], 'post', ['class' => 'cart__form']) ?>
-        <div class="grid grid_50">
-            <div class="grid__item">
-                <div class="field">
-                    <div class="field__label"><?= $order->getAttributeLabel('name'); ?></div>
-                    <div class="field__input">
-                        <?= Html::activeInput('text', $order, 'name', ['class' => 'text-field', 'placeholder' => 'Василий Пупкин', 'data-error' => empty($order->errors['name']) ? '' : $order->errors['name'][0]]) ?>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__item">
-                <div class="field">
-                    <div class="field__label"><?= $order->getAttributeLabel('email'); ?></div>
-                    <div class="field__input">
-                        <?= Html::activeInput('text', $order, 'email', ['class' => 'text-field', 'placeholder' => 'mail@example.ru', 'data-error' => empty($order->errors['email']) ? '' : $order->errors['email'][0]]) ?>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__item">
-                <div class="field">
-                    <div class="field__label"><?= $order->getAttributeLabel('phone'); ?></div>
-                    <div class="field__input">
-                        <?= Html::activeInput('text', $order, 'phone', ['class' => 'text-field', 'placeholder' => '+7 (987) 654-32-12', 'data-error' => empty($order->errors['phone']) ? '' : $order->errors['phone'][0]]) ?>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__item">
-                <div class="field">
-                    <div class="field__label"><?= $order->getAttributeLabel('date'); ?></div>
-                    <div class="field__input">
-                        <?= Html::activeInput('text', $order, 'date', ['class' => 'text-field', 'placeholder' => 'К какой дате приготовить?', 'data-error' => empty($order->errors['date']) ? '' : $order->errors['date'][0]]) ?>
-                    </div>
+    <div class="grid grid_50">
+        <div class="grid__item">
+            <div class="field">
+                <div class="field__label"><?= $order->getAttributeLabel('name'); ?></div>
+                <div class="field__input">
+                    <?= Html::activeInput('text', $order, 'name', ['class' => 'text-field', 'placeholder' => 'Василий Пупкин', 'data-error' => empty($order->errors['name']) ? '' : $order->errors['name'][0]]) ?>
                 </div>
             </div>
         </div>
-        <div class="cart__form-footer">
-            <div class="cart__total">Итого: <span class="cart__total-value">6000</span> р.</div>
-            <?= Html::submitButton('Заказать', ['class' => 'cart__order-btn btn btn_simple']) ?>
+        <div class="grid__item">
+            <div class="field">
+                <div class="field__label"><?= $order->getAttributeLabel('email'); ?></div>
+                <div class="field__input">
+                    <?= Html::activeInput('text', $order, 'email', ['class' => 'text-field', 'placeholder' => 'mail@example.ru', 'data-error' => empty($order->errors['email']) ? '' : $order->errors['email'][0]]) ?>
+                </div>
+            </div>
         </div>
+        <div class="grid__item">
+            <div class="field">
+                <div class="field__label"><?= $order->getAttributeLabel('phone'); ?></div>
+                <div class="field__input">
+                    <?= Html::activeInput('text', $order, 'phone', ['class' => 'text-field', 'placeholder' => '+7 (987) 654-32-12', 'data-error' => empty($order->errors['phone']) ? '' : $order->errors['phone'][0]]) ?>
+                </div>
+            </div>
+        </div>
+        <div class="grid__item">
+            <div class="field">
+                <div class="field__label"><?= $order->getAttributeLabel('date'); ?></div>
+                <div class="field__input">
+                    <?= Html::activeInput('text', $order, 'date', ['class' => 'text-field', 'placeholder' => 'К какой дате приготовить?', 'data-error' => empty($order->errors['date']) ? '' : $order->errors['date'][0]]) ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart__form-footer">
+        <div class="cart__total">Итого: <span class="cart__total-value">6000</span> р.</div>
+        <?= Html::submitButton('Заказать', ['class' => 'cart__order-btn btn btn_simple']) ?>
+    </div>
     <?= Html::endForm() ?>
 </div>

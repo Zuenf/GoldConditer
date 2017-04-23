@@ -30,7 +30,7 @@ jQuery(function ($) {
         } else {
             $('input[name="' + name + '"]:disabled', parent).removeAttr('disabled');
         }
-    });
+    }).change();
 
     //Числовой инпут
     $('.custom-input_number .custom-input__arrow').on('click', function () {

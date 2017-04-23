@@ -10,13 +10,6 @@ use yii\db\ActiveRecord;
  */
 class Order extends ActiveRecord
 {
-    public $name;
-    public $email;
-    public $subject;
-    public $body;
-    public $verifyCode;
-
-
     public static function tableName()
     {
         return '{{orders}}';
@@ -32,7 +25,7 @@ class Order extends ActiveRecord
             ['email', 'email', 'message' => 'Неправильный E-mail'],
             ['date', 'date', 'message' => 'Неправильная дата'],
             ['phone', 'udokmeci\yii2PhoneValidator\PhoneValidator','country'=>'RU', 'message' => 'Неправильный номер телефона'],
-            ['name', 'string', 'max' => 70,  'message' => 'Имя не может содержать больше 70 символов'],
+            ['name', 'string', 'max' => 70,  'message' => 'Не может содержать больше 70 символов'],
         ];
     }
 
